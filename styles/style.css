@@ -167,22 +167,32 @@ input[type="submit"]:hover {
 #projects .projects--list {
     display: flex;
     justify-content: space-between;
-    row-gap: 1rem;
+    gap: 1rem;
 }
 
-#projects .projects--list .projects--item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.projects--item {
+    position: relative;
+    max-width: 100%;
+}
 
-    height: 150px;
-    width: 30%;
+.projects--list h3 {
+    margin-top: 1rem;
+}
 
-    background-color: lightblue;
+.projects--item img.img-secondary {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
 
-    border-radius: 1rem;
-    padding: 1rem;
+.projects--item:hover img.img-secondary {
+    opacity: 1;
+    cursor: pointer;
 }
 
 /* SKILLS */
