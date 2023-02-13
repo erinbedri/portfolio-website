@@ -18,7 +18,8 @@
 
             <div class="header--nav">
                 <ul class="header--nav-links" role="list">
-                    <li class="header--nav-link active"><a href="#about">About</a></li>
+                    <li class="header--nav-link active"><a href="#">About</a></li>
+                    <li class="header--nav-link"><a href="#education">Education</a></li>
                     <li class="header--nav-link"><a href="#skills">Skills</a></li>
                     <li class="header--nav-link"><a href="#projects">Projects</a></li>
                     <li class="header--nav-link"><a href="#contact">Contact</a></li>
@@ -42,6 +43,35 @@
                     entry-level software developer role to utilize my skills and experience to take on more challenging
                     and stimulating projects.
                 </p>
+            </div>
+
+            <div id="education" class="education container-main">
+                <h2>Education</h2>
+                <div class="divider"></div>
+
+                <div class="education--list">
+                    <div class="education--item">
+                        <h3>Software Engineering (Grade: 5.98/6.00)</h3>
+                        <p>Software University (SoftUni), Sofia, Bulgaria - online</p>
+                        <p>06/2021 - ongoing</p>
+                    </div>
+                </div>
+
+                <div class="education--list">
+                    <div class="education--item">
+                        <h3>M.Sc. Integrated Natural Resource Management (Grade: 1.5)</h3>
+                        <p>Humboldt University of Berlin, Berlin, Germany</p>
+                        <p>10/2016 - 12/2019</p>
+                    </div>
+                </div>
+
+                <div class="education--list">
+                    <div class="education--item">
+                        <h3>B.Sc. Environmental and Resource Management (Grade: 1.9)</h3>
+                        <p>Brandenburg University of Technology, Cottbus, Germany</p>
+                        <p>10/2012 - 12/2015</p>
+                    </div>
+                </div>
             </div>
 
             <div id="skills" class="skills container-main">
@@ -99,16 +129,71 @@
             <div id="contact" class="contact container-main">
                 <h2>Contact</h2>
                 <div class="divider"></div>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, maxime soluta obcaecati ullam velit
-                    placeat nam non, corrupti reiciendis, tempore sunt tenetur? Expedita reiciendis provident
-                    consectetur inventore architecto dolor nostrum. Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Quia officia veniam accusantium. Mollitia beatae totam architecto voluptatibus maiores earum
-                    molestias hic voluptatem ea illo minima, placeat dolorem aut ullam numquam.
-                </p>
+
+                <div class="contact--wrapper">
+                    <div class="contact--text">
+                        <div class="contact--element">
+                            <h3>Email</h3>
+                            <p>erinbedri@gmail.com</p>
+                        </div>
+
+                        <div class="contact--element">
+                            <h3>Mobile</h3>
+                            <p>+49/176 7701 5372</p>
+                        </div>
+
+                        <div class="contact--element">
+                            <h3>Location</h3>
+                            <p>Berlin, Germany</p>
+                        </div>
+                    </div>
+
+                    <div class="contact--form">
+                        <form action="/">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+
+                            <label for="subject">Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Your Message..."
+                                style="height: 200px"
+                            ></textarea>
+
+                            <input type="submit" value="Submit" />
+                        </form>
+                    </div>
+                </div>
             </div>
 
-            <footer id="footer">footer</footer>
+            <footer id="footer" class="container-main">
+                <div>
+                    <span class="footer--title"><a href="#">ERIN BEDRI</a></span>
+                </div>
+
+                <div>
+                    <span class="footer--title">EXPLORE</span>
+                    <span class="footer--element"><a href="#about">About</a></span>
+                    <span class="footer--element"><a href="#education">Education</a></span>
+                    <span class="footer--element"><a href="#skills">Skills</a></span>
+                    <span class="footer--element"><a href="#projects">Projects</a></span>
+                    <span class="footer--element"><a href="#contact">Contact</a></span>
+                </div>
+
+                <div>
+                    <span class="footer--title">FOLLOW</span>
+                    <div class="footer--social">
+                        <a href="https://github.com/erinbedri"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/erin-bedri-797b90146/"
+                            ><i class="fa-brands fa-linkedin"></i
+                        ></a>
+                    </div>
+                </div>
+            </footer>
         </main>
 
         <script>
