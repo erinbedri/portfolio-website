@@ -11,11 +11,113 @@
         <title>Erin Bedri</title>
     </head>
     <body>
-        <header id="header">header</header>
+        <header id="header" class="container">
+            <div class="header--logo">
+                <a href="#"><span class="header--logo-link">Erin Bedri</span></a>
+            </div>
+
+            <div class="header--nav">
+                <ul class="header--nav-links" role="list">
+                    <li class="header--nav-link active"><a href="#about">About</a></li>
+                    <li class="header--nav-link"><a href="#skills">Skills</a></li>
+                    <li class="header--nav-link"><a href="#projects">Projects</a></li>
+                    <li class="header--nav-link"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </header>
 
         <main id="main">
-            main
+            <div id="about" class="about container-main">
+                <div class="about--img"></div>
+
+                <h2>Junior Software Developer</h2>
+                <div class="divider"></div>
+
+                <p>
+                    Highly motivated and results-driven Master of Science graduate from Humboldt University of Berlin
+                    with over 3 years of experience in a fast-paced technology startup as a Product Owner and UX/UI
+                    Designer. Proven track record of successfully managing the development of a B2B online marketplace
+                    that integrated blockchain technology for agricultural raw materials trading. Led a team of 5
+                    software developers and played a key role in shaping the design vision of the project. Seeking an
+                    entry-level software developer role to utilize my skills and experience to take on more challenging
+                    and stimulating projects.
+                </p>
+            </div>
+
+            <div id="skills" class="skills container-main">
+                <h2>Skills</h2>
+                <div class="divider"></div>
+
+                <div>
+                    <h3>Development</h3>
+                    <ul class="skills--list" role="list">
+                        <li class="skills--list-item">Python</li>
+                        <li class="skills--list-item">Django</li>
+                        <li class="skills--list-item">JavaScript</li>
+                        <li class="skills--list-item">React</li>
+                        <li class="skills--list-item">HTML</li>
+                        <li class="skills--list-item">CSS</li>
+                        <li class="skills--list-item">Bootstrap</li>
+                        <li class="skills--list-item">PostgreSQL</li>
+                        <li class="skills--list-item">AWS</li>
+                        <li class="skills--list-item">Heroku</li>
+                        <li class="skills--list-item">Cloudinary</li>
+                        <li class="skills--list-item">Git</li>
+                        <li class="skills--list-item">GitHub</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Design</h3>
+                    <ul class="skills--list" role="list">
+                        <li class="skills--list-item">AdobeXD</li>
+                        <li class="skills--list-item">Figma</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Others</h3>
+                    <ul class="skills--list" role="list">
+                        <li class="skills--list-item">Jira</li>
+                        <li class="skills--list-item">MS Office</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="projects" class="projects container-main">
+                <h2>Projects</h2>
+                <div class="divider"></div>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, maxime soluta obcaecati ullam velit
+                    placeat nam non, corrupti reiciendis, tempore sunt tenetur? Expedita reiciendis provident
+                    consectetur inventore architecto dolor nostrum. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Quia officia veniam accusantium. Mollitia beatae totam architecto voluptatibus maiores earum
+                    molestias hic voluptatem ea illo minima, placeat dolorem aut ullam numquam.
+                </p>
+            </div>
+
+            <div id="contact" class="contact container-main">
+                <h2>Contact</h2>
+                <div class="divider"></div>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, maxime soluta obcaecati ullam velit
+                    placeat nam non, corrupti reiciendis, tempore sunt tenetur? Expedita reiciendis provident
+                    consectetur inventore architecto dolor nostrum. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Quia officia veniam accusantium. Mollitia beatae totam architecto voluptatibus maiores earum
+                    molestias hic voluptatem ea illo minima, placeat dolorem aut ullam numquam.
+                </p>
+            </div>
+
             <footer id="footer">footer</footer>
         </main>
+
+        <script>
+            document.querySelectorAll(".header--nav-link a").forEach((ele) =>
+                ele.addEventListener("click", function (event) {
+                    document.querySelectorAll(".header--nav-link a").forEach((ele) => ele.classList.remove("active"));
+                    this.classList.add("active");
+                })
+            );
+        </script>
     </body>
 </html>
