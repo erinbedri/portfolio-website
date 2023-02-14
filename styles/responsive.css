@@ -1,81 +1,29 @@
-@media screen and (max-width: 910px) {
-    .container {
-        padding: 0.5rem 5rem;
-    }
-
-    .container-main {
-        padding: 0.75rem 5rem;
-    }
-}
-
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 576px) {
     #main {
-        margin-top: 14rem;
+        margin-top: 5rem;
     }
-
     .container {
-        padding: 0.5rem 1.5rem;
-    }
-
-    .container-main {
         padding: 0.75rem 2rem;
     }
 
+    .container-main {
+        padding: 1.5rem 2rem;
+    }
+
     #header .header--nav .header--nav-links {
+        display: flex;
         flex-direction: column;
-        gap: 0.25rem;
     }
 
     #about .about--img {
         display: none;
     }
-}
-
-@media screen and (max-width: 675px) {
-    #main {
-        margin-top: 14rem;
-    }
-
-    .container {
-        padding: 0.5rem 1.5rem;
-    }
-
-    .container-main {
-        padding: 0.75rem 1.5rem;
-    }
-
-    #header .header--nav .header--nav-links {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    #header .header--nav .header--nav-links .header--nav-link:not(:last-child) {
-        padding-right: 1.25rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    #main {
-        margin-top: 14rem;
-    }
-
-    #header .header--nav .header--nav-links {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .container {
-        padding: 0.5rem 1.25rem;
-    }
-
-    .container-main {
-        padding: 0.75rem 1.55rem;
-    }
 
     #projects .projects--list {
+        display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        gap: 1rem;
     }
 
     #contact .contact--wrapper {
@@ -83,4 +31,66 @@
         flex-direction: column;
         gap: 2rem;
     }
+
+    .menu {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    #main {
+        margin-top: 6rem;
+    }
+
+    .container {
+        padding: 1rem 2rem;
+    }
+
+    .container-main {
+        padding: 1.5rem 2rem;
+    }
+
+    #about .about--img {
+        display: none;
+    }
+
+    #projects .projects--list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    #contact .contact--wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .menu {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .container {
+        padding: 0.55rem 4rem;
+    }
+
+    .container-main {
+        padding: 1.75rem 5rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .container {
+        padding: 0.55rem 5rem;
+    }
+
+    .container-main {
+        padding: 1.75rem 5.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
 }

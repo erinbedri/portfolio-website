@@ -60,9 +60,6 @@ p {
     background-color: var(--main-color);
 }
 
-.active {
-}
-
 input[type="text"],
 select,
 textarea {
@@ -100,6 +97,7 @@ input[type="submit"]:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 0.25rem;
 
     box-shadow: 0px 0px 11px 8px rgba(0, 0, 0, 0.05);
 
@@ -277,4 +275,11 @@ input[type="submit"]:hover {
     color: white;
     font-size: var(--font-size-medium);
     margin-right: 1rem;
+}
+
+/* DEMO */
+.menu {
+    display: none;
+    font-size: 2.25rem;
+    color: var(--main-color);
 }
